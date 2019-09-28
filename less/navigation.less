@@ -1,1 +1,24 @@
 // Navigation code here
+
+.flex-box(@justify,@align,@direction:row,@wrap:nowrap){
+display: flex;
+flex-flow: @direction @wrap;
+justify-content: @justify;
+align-items: @align;
+}
+
+.nav-container {
+    background-color: @nav-bar;
+    .flex-box(center, center, row, nowrap,);
+
+    h1 {
+        font-size: 4rem;
+    }
+    nav {
+        a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        }
+    }
+}
