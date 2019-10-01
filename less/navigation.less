@@ -1,24 +1,29 @@
 // Navigation code here
 
-.flex-box(@justify,@align,@direction:row,@wrap:nowrap){
-display: flex;
-flex-flow: @direction @wrap;
-justify-content: @justify;
-align-items: @align;
-}
-
 .nav-container {
     background-color: @nav-bar;
-    .flex-box(center, center, row, nowrap,);
+    .flex-box(center, center, column, nowrap,);
+
 
     h1 {
+        color: @header-font-color;
         font-size: 4rem;
     }
-    nav {
+    .nav-bar {
+        display: flex;
+        padding: 3% 10% 0 10%;
+        width: 100%;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            width: inherit;
+
         a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: black;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: @main-font-color;
         }
+      }
     }
 }
