@@ -168,8 +168,6 @@ p {
   align-items: center;
   padding: 3% 23% 1%;
   width: 100%;
-  position: fixed;
-  opacity: 15px;
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -206,7 +204,6 @@ footer {
   align-items: center;
 }
 .home .intro img {
-  margin-top: 13%;
   border-radius: 5px;
   width: 100%;
 }
