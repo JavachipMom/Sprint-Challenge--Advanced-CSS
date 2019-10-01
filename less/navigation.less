@@ -4,6 +4,10 @@
     background-color: @nav-bg;
     .flex-box(center, center, column, nowrap,);
 
+    @media @mobile {
+        .mobile-format();
+        padding: 0;
+    }
 
     h1 {
         color: @header-font-color;
@@ -11,7 +15,7 @@
     }
     .nav-bar {
         display: flex;
-        padding: 3% 10% 0 10%;
+        padding: 3% 6% 0 6%;
         width: 100%;
 
         div {

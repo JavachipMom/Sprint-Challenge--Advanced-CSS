@@ -169,13 +169,24 @@ p {
   padding: 3% 23% 1%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+}
 .nav-container h1 {
   color: #23293B;
   font-size: 4rem;
 }
 .nav-container .nav-bar {
   display: flex;
-  padding: 3% 10% 0 10%;
+  padding: 3% 6% 0 6%;
   width: 100%;
 }
 .nav-container .nav-bar div {
@@ -251,6 +262,10 @@ footer {
   border-radius: 5px;
   font-size: 1.8rem;
   border: none;
+  cursor: pointer;
+}
+.home .walk .btn button:hover {
+  background-color: #353e5a;
 }
 .home .walk .walk-img {
   width: 46%;
