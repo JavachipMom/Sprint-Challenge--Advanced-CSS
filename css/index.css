@@ -168,6 +168,8 @@ p {
   align-items: center;
   padding: 3% 23% 1%;
   width: 100%;
+  position: fixed;
+  opacity: 15px;
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -204,6 +206,7 @@ footer {
   align-items: center;
 }
 .home .intro img {
+  margin-top: 13%;
   border-radius: 5px;
   width: 100%;
 }
@@ -228,6 +231,10 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  opacity: 0.5;
+}
+.home .space-images img:hover {
+  opacity: 1;
 }
 @media (max-width: 500px) {
   .home .space-images .blast {
@@ -293,7 +300,9 @@ footer {
   cursor: pointer;
 }
 .home .walk .btn button:hover {
-  background-color: #353e5a;
+  background-color: white;
+  color: #22283A;
+  border: 1px solid;
 }
 @media (max-width: 500px) {
   .home .walk .btn button {
